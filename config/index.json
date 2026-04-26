@@ -1,0 +1,108 @@
+[
+  {
+    "type": "heading",
+    "defaultValue": "Cursive Watchface"
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Data Lines"
+      },
+      {
+        "type": "text",
+        "defaultValue": "Use placeholders: %steps%, %calories%, %distance%, %heartrate%, %battery%"
+      },
+      {
+        "type": "input",
+        "messageKey": "DATA1",
+        "label": "Line 1",
+        "defaultValue": "Dear diary, today"
+      },
+      {
+        "type": "input",
+        "messageKey": "DATA2",
+        "label": "Line 2",
+        "defaultValue": "I walked %steps% steps"
+      },
+      {
+        "type": "input",
+        "messageKey": "DATA3",
+        "label": "Line 3",
+        "defaultValue": "And burned %calories% cals"
+      },
+      {
+        "type": "input",
+        "messageKey": "DATA4",
+        "label": "Line 4",
+        "defaultValue": "My heartbeat is %heartrate%"
+      },
+      {
+        "type": "input",
+        "messageKey": "DATA5",
+        "label": "Line 5",
+        "defaultValue": "Battery: %battery%"
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Colors"
+      },
+      {
+        "type": "color",
+        "messageKey": "PAPER_COLOR",
+        "label": "Paper Color",
+        "defaultValue": "FFFF55",
+        "sunlight": false,
+        "layout": "COLOR"
+      },
+      {
+        "type": "color",
+        "messageKey": "LINES_COLOR",
+        "label": "Lines Color",
+        "defaultValue": "AAAA55",
+        "sunlight": false,
+        "layout": "COLOR"
+      },
+      {
+        "type": "color",
+        "messageKey": "TEXT_COLOR",
+        "label": "Text Color",
+        "defaultValue": "0000AA",
+        "sunlight": false,
+        "layout": "COLOR"
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Behavior"
+      },
+      {
+        "type": "input",
+        "messageKey": "TIMEOUT",
+        "label": "Data Screen Timeout",
+        "description": "Seconds before returning to time screen (blank/0 disables auto-return)",
+        "defaultValue": "",
+        "attributes": {
+          "type": "number",
+          "min": "0",
+          "max": "300",
+          "placeholder": "e.g. 15"
+        }
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "defaultValue": "Save Settings"
+  }
+]

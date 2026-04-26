@@ -1,0 +1,46 @@
+{
+  "name": "cursive",
+  "author": "Comfortably Numb",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {
+    "pebble-clay": "^1.0.4"
+  },
+  "pebble": {
+    "displayName": "Cursive",
+    "uuid": "464791e9-ca75-4004-b848-de2b4a46c6c6",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": ["emery"],
+    "watchapp": { "watchface": true },
+    "capabilities": ["health"],
+    "messageKeys": [
+      "DATA1",
+      "DATA2",
+      "DATA3",
+      "DATA4",
+      "DATA5",
+      "PAPER_COLOR",
+      "LINES_COLOR",
+      "TEXT_COLOR",
+      "TIMEOUT"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "BLACKPEN_128",
+          "file": "fonts/Black Pen.ttf",
+          "characterRegex": "[0-9:]"
+        },
+        {
+          "type": "font",
+          "name": "BLACKPEN_42",
+          "file": "fonts/Black Pen.ttf",
+          "characterRegex": "[ -~]"
+        }
+      ]
+    }
+  }
+}
